@@ -569,7 +569,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cubes: {fileID: 6153933340782320323, guid: fa841e323a9467f4a97e5c40b96907c1, type: 3}
   cubos: []
-  crane: {fileID: 1504037990}
+  claw: {fileID: 1504037990}
+  crane: {fileID: 973087681}
 --- !u!1 &1504037990
 GameObject:
   m_ObjectHideFlags: 0
