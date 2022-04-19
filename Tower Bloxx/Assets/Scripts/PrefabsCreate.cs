@@ -30,6 +30,12 @@ public class PrefabsCreate : MonoBehaviour
         }
 
         //Mover crane para los costados
+        MoveCubeWithPendule();
+        
+    }
 
+    public void MoveCubeWithPendule()
+    {
+        cubes.transform.position = new Vector3(0, 0, claw.transform.position.z);
     }
 }
