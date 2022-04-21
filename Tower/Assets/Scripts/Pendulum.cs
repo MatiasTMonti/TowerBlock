@@ -49,4 +49,9 @@ public class Pendulum : MonoBehaviour
             rb.angularVelocity = -1 * moveSpeed;
         }
     }
+
+    public void MovePendulum()
+    {
+        Debug.Log("Mover");
+    }
 }

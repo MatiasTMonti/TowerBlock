@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveCamera : MonoBehaviour
@@ -9,22 +7,14 @@ public class MoveCamera : MonoBehaviour
 
     private float up = 1;
 
-    // Start is called before the first frame update
     void Start()
     {
         camera = GetComponent<Camera>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void MovementCamera()
     {
-        //pendulum.position = new Vector3(0, up, 0);
-        //camera.transform.position = pendulum.position;
-        Debug.Log("Mover");    
+        pendulum.position = new Vector3(0, camera.transform.position.y + up, 0);
+        camera.transform.position = new Vector3(camera.transform.position.x, pendulum.position.y, camera.transform.position.z);
     }
 }
