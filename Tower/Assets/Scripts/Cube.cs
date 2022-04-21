@@ -10,7 +10,7 @@ public class Cube : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawn.GetComponent<MeshRenderer>();
+        spawn = GetComponent<MeshRenderer>();
         timeRestart = 2;
     }
 

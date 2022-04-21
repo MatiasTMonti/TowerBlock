@@ -5,6 +5,7 @@ using UnityEngine;
 public class Collisions : MonoBehaviour
 {
     private Rigidbody rb;
+    private MoveCamera camera;
 
     private void Start()
     {
@@ -16,6 +17,7 @@ public class Collisions : MonoBehaviour
         if (collision.gameObject.CompareTag("Floor") || collision.gameObject.CompareTag("Cube"))
         {
             rb.isKinematic = true;
+            camera.MovementCamera();
         }
         else
         {
