@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Pendule : MonoBehaviour
+public class Pendulum : MonoBehaviour
 {
     Rigidbody rb;
 
@@ -15,7 +13,7 @@ public class Pendule : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        movingClockWise = true; 
+        movingClockWise = true;
     }
 
     // Update is called once per frame

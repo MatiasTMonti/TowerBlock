@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Collisions : MonoBehaviour
@@ -8,6 +10,7 @@ public class Collisions : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Floor") || collision.gameObject.CompareTag("Cube"))
